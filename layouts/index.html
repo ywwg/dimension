@@ -9,7 +9,7 @@
               {{ with .Site.Params.logoimage }}
               <img src="{{ . }}" width="100%" style="padding: 10px 10px 10px 10px;">
             {{ end }}
-            {{ with .Site.Params.logo }}            
+            {{ with .Site.Params.logo }}
               <span class="icon {{ . }}"></span>
             {{ end }}
             </div>
@@ -22,7 +22,7 @@
             <nav>
               <ul>
                 {{ range .Data.Pages.ByWeight }}
-                  <li>{{ if isset .Params "link" }}<a href="{{ index .Params "link" }}"{{else}}<a href="#{{ .File.TranslationBaseName }}"{{end}}>{{ if .GetParam "menuname" }}{{ .GetParam "menuname" }}{{ else }}{{ .Title }}{{ end }}</a></li>
+                  <li>{{ if isset .Params "link" }}<a href="{{ index .Params "link" }}"{{else}}<a href="#{{ .File.TranslationBaseName }}"{{end}}>{{ if .Param "menuname" }}{{ .Param "menuname" }}{{ else }}{{ .Title }}{{ end }}</a></li>
                 {{ end }}
               </ul>
             </nav>
