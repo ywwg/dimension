@@ -1,4 +1,4 @@
-<article id="{{ .File.TranslationBaseName }}">
+<article id="{{ with .File }}{{ .TranslationBaseName }}{{ end }}">
   <h1>{{ .Title }}</h1>
   {{ .Content }}
 </article>
