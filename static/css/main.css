@@ -5,6 +5,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+:root {
+  --linecolor: #ffd6cc;
+}
+
+
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -79,7 +85,7 @@ html {
       font-size: 10pt; } }
 
 body, input, select, textarea {
-  color: #ffffff;
+  color: var(--linecolor);
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   font-size: 1rem;
@@ -97,7 +103,7 @@ a {
     border-bottom-color: transparent; }
 
 strong, b {
-  color: #ffffff;
+  color: var(--linecolor);
   font-weight: 600; }
 
 em, i {
@@ -107,7 +113,7 @@ p {
   margin: 0 0 2rem 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #ffffff;
+  color: var(--linecolor);
   font-weight: 600;
   line-height: 1.5;
   margin: 0 0 1rem 0;
@@ -117,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
     color: inherit;
     text-decoration: none; }
   h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-    border-bottom: solid 1px #ffffff;
+    border-bottom: solid 1px var(--linecolor);
     width: -moz-max-content;
     width: -webkit-max-content;
     width: -ms-max-content;
@@ -166,7 +172,7 @@ sup {
   top: -0.5rem; }
 
 blockquote {
-  border-left: solid 4px #ffffff;
+  border-left: solid 4px var(--linecolor);
   font-style: italic;
   margin: 0 0 2rem 0;
   padding: 0.5rem 0 0.5rem 2rem; }
@@ -192,7 +198,7 @@ pre {
 
 hr {
   border: 0;
-  border-bottom: solid 1px #ffffff;
+  border-bottom: solid 1px var(--linecolor);
   margin: 2.75rem 0; }
 
 .align-left {
@@ -235,7 +241,7 @@ form {
         padding: 0; } }
 
 label {
-  color: #ffffff;
+  color: var(--linecolor);
   display: block;
   font-size: 0.8rem;
   font-weight: 300;
@@ -260,7 +266,7 @@ textarea {
   transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
   background: transparent;
   border-radius: 4px;
-  border: solid 1px #ffffff;
+  border: solid 1px var(--linecolor);
   color: inherit;
   display: block;
   outline: 0;
@@ -281,12 +287,12 @@ textarea {
   select:focus,
   textarea:focus {
     background: rgba(255, 255, 255, 0.075);
-    border-color: #ffffff;
-    box-shadow: 0 0 0 1px #ffffff; }
+    border-color: var(--linecolor);
+    box-shadow: 0 0 0 1px var(--linecolor); }
 
 select option {
   background: #1b1f22;
-  color: #ffffff; }
+  color: var(--linecolor); }
 
 .select-wrapper {
   text-decoration: none;
@@ -300,7 +306,7 @@ select option {
     font-weight: normal;
     text-transform: none !important; }
   .select-wrapper:before {
-    color: #ffffff;
+    color: var(--linecolor);
     content: '\f107';
     display: block;
     height: 2.75rem;
@@ -342,7 +348,7 @@ input[type="radio"] {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: #ffffff;
+    color: var(--linecolor);
     cursor: pointer;
     display: inline-block;
     font-size: 0.8rem;
@@ -366,7 +372,7 @@ input[type="radio"] {
       -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
       transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
       border-radius: 4px;
-      border: solid 1px #ffffff;
+      border: solid 1px var(--linecolor);
       content: '';
       display: inline-block;
       height: 1.65rem;
@@ -378,15 +384,15 @@ input[type="radio"] {
       width: 1.65rem; }
   input[type="checkbox"]:checked + label:before,
   input[type="radio"]:checked + label:before {
-    background: #ffffff !important;
-    border-color: #ffffff !important;
+    background: var(--linecolor) !important;
+    border-color: var(--linecolor) !important;
     color: #1b1f22;
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
     background: rgba(255, 255, 255, 0.075);
-    border-color: #ffffff;
-    box-shadow: 0 0 0 1px #ffffff; }
+    border-color: var(--linecolor);
+    box-shadow: 0 0 0 1px var(--linecolor); }
 
 input[type="checkbox"] + label:before {
   border-radius: 4px; }
@@ -417,7 +423,7 @@ input[type="radio"] + label:before {
 /* Box */
 .box {
   border-radius: 4px;
-  border: solid 1px #ffffff;
+  border: solid 1px var(--linecolor);
   margin-bottom: 2rem;
   padding: 1.5em; }
   .box > :last-child,
@@ -518,7 +524,7 @@ ul {
     list-style: none;
     padding-left: 0; }
     ul.alt li {
-      border-top: solid 1px #ffffff;
+      border-top: solid 1px var(--linecolor);
       padding: 0.5em 0; }
       ul.alt li:first-child {
         border-top: 0;
@@ -534,7 +540,7 @@ ul {
         padding-right: 0; }
       ul.icons li a {
         border-radius: 100%;
-        box-shadow: inset 0 0 0 1px #ffffff;
+        box-shadow: inset 0 0 0 1px var(--linecolor);
         display: inline-block;
         height: 2.25rem;
         line-height: 2.25rem;
@@ -621,7 +627,7 @@ table {
   margin: 0 0 2rem 0;
   width: 100%; }
   table tbody tr {
-    border: solid 1px #ffffff;
+    border: solid 1px var(--linecolor);
     border-left: 0;
     border-right: 0; }
     table tbody tr:nth-child(2n + 1) {
@@ -629,19 +635,19 @@ table {
   table td {
     padding: 0.75em 0.75em; }
   table th {
-    color: #ffffff;
+    color: var(--linecolor);
     font-size: 0.9em;
     font-weight: 600;
     padding: 0 0.75em 0.75em 0.75em;
     text-align: left; }
   table thead {
-    border-bottom: solid 2px #ffffff; }
+    border-bottom: solid 2px var(--linecolor); }
   table tfoot {
-    border-top: solid 2px #ffffff; }
+    border-top: solid 2px var(--linecolor); }
   table.alt {
     border-collapse: separate; }
     table.alt tbody tr td {
-      border: solid 1px #ffffff;
+      border: solid 1px var(--linecolor);
       border-left-width: 0;
       border-top-width: 0; }
       table.alt tbody tr td:first-child {
@@ -670,8 +676,8 @@ button,
   background-color: transparent;
   border-radius: 4px;
   border: 0;
-  box-shadow: inset 0 0 0 1px #ffffff;
-  color: #ffffff !important;
+  box-shadow: inset 0 0 0 1px var(--linecolor);
+  color: var(--linecolor) !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.8rem;
@@ -716,7 +722,7 @@ button,
   input[type="button"].special,
   button.special,
   .button.special {
-    background-color: #ffffff;
+    background-color: var(--linecolor);
     color: #1b1f22 !important;
     font-weight: 600; }
   input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -877,7 +883,7 @@ button {
       left: calc(50% - 1px);
       width: 1px;
       height: calc(3.5rem + 1px);
-      background: #ffffff; }
+      background: var(--linecolor); }
   #header > :first-child {
     margin-top: 0; }
     #header > :first-child:before {
@@ -886,13 +892,13 @@ button {
     width: 5.5rem;
     height: 5.5rem;
     line-height: 5.5rem;
-    border: solid 1px #ffffff;
+    border: solid 1px var(--linecolor);
     border-radius: 100%; }
     #header .logo .icon:before {
       font-size: 2rem; }
   #header .content {
     border-style: solid;
-    border-color: #ffffff;
+    border-color: var(--linecolor);
     border-top-width: 1px;
     border-bottom-width: 1px;
     max-width: 100%; }
@@ -923,12 +929,12 @@ button {
     margin-bottom: 0;
     list-style: none;
     padding-left: 0;
-    border: solid 1px #ffffff;
+    border: solid 1px var(--linecolor);
     display:block;
     border-radius: 4px; }
     #header nav ul li {
       padding-left: 0;
-      border-top: solid 1px #ffffff;}
+      border-top: solid 1px var(--linecolor);}
       #header nav ul li:first-child {
         border-top: 0;}
       #header nav ul li a {
@@ -953,7 +959,7 @@ button {
     left: calc(50% - 1px);
     width: 1px;
     height: 100%;
-    background: #ffffff; }
+    background: var(--linecolor); }
   #header nav.use-middle ul li.is-middle {
     border-left: 0; }
   body.is-article-visible #header {
@@ -1011,7 +1017,7 @@ button {
         max-width: 100%; }
         #header nav ul li {
           border-left: 0;
-          border-top: solid 1px #ffffff; }
+          border-top: solid 1px var(--linecolor); }
           #header nav ul li:first-child {
             border-top: 0; }
           #header nav ul li a {
