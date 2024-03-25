@@ -13,7 +13,22 @@
 		<link rel="stylesheet" href="/css/project.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
 		<noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="/css/plyr.css" />
 	</head>
-	<!-- Scripts -->
-			<script src="/js/jquery.min.js"></script>
+  <!-- Scripts -->
+
+  <script src="/js/jquery.min.js"></script>
+  <!-- Recliner does the lazy loading of the mixcloud embeds -->
+  <script src="/js/recliner.min.js"></script>
+
+  <script>
+    $(function() {
+        $('.lazy').recliner({
+            attrib: "data-src", // selector for attribute containing the media src
+            throttle: 300,      // millisecond interval at which to process events
+            threshold: 100,     // scroll distance from element before its loaded
+            live: true          // auto bind lazy loading to ajax loaded elements
+        });
+    });
+  </script>
 	<body>
