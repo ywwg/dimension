@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+
+<div id="wrapper">
+  <div id="page" style="display: flex;">
+    <article id="{{ with .File }}{{ .TranslationBaseName }}{{ end }}" class="active" style="display: block;">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+      <div class="close" onclick="location.pathname='';">Close</div>
+    </article>
+  </div>
+</div>
+
+<!-- Multilanguage -->
+<div id="languages">
+  {{ if .IsTranslated }}
+  {{ range $i, $e := .Translations }}
+  {{ if $i }}, {{ end }}<a href="{{ .Permalink }}">{{ $e.Language.LanguageName }}</a>
+  {{ end}}
+  {{ end }}
+</div>
+{{ partial "footer.html" . }}
