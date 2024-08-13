@@ -18,7 +18,7 @@
         <h1>{{ .Site.Title | safeHTML }}</h1>
         <p>{{ .Site.Params.description | safeHTML }}</p>
         {{ with .Site.GetPage "announce.md" }}
-          <p><a href="#{{ with .File }}{{ .TranslationBaseName }}{{ end }}">{{ .Title }}</a></p>
+          <h2><a href="#{{ with .File }}{{ .TranslationBaseName }}{{ end }}">{{ .Title }}</a></h2>
         {{ end }}
       </div>
     </div>
